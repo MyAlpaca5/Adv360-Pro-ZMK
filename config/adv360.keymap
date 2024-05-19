@@ -14,8 +14,8 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/backlight.h>
 
 / {
   behaviors {
@@ -39,7 +39,7 @@
 
         default_layer {
             bindings = <
-     &mo 1  &kp N1  &kp N2    &kp N3     &kp N4  &kp N5              &kp C_VOLUME_UP                                                           &bl BL_TOG  &kp N6    &kp N7     &kp N8   &kp N9    &kp N0  &sk RC(RSHIFT)
+     &mo 1  &kp N1  &kp N2    &kp N3     &kp N4  &kp N5              &kp C_VOLUME_UP                                                            &kp K_APP  &kp N6    &kp N7     &kp N8   &kp N9    &kp N0  &sk RC(RSHIFT)
    &kp TAB   &kp Q   &kp W     &kp E      &kp R   &kp T                   &kp C_MUTE                                                        &kp RG(SPACE)   &kp Y     &kp U      &kp I    &kp O     &kp P           &none
    &kp ESC   &kp A   &kp S     &kp D      &kp F   &kp G            &kp C_VOLUME_DOWN   &none      &none                      &none   &none  &kp RA(SPACE)   &kp H     &kp J      &kp K    &kp L  &kp SEMI         &kp SQT
  &kp LSHFT   &kp Z   &kp X     &kp C      &kp V   &kp B                                           &none                      &none                          &kp N     &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp RSHFT
@@ -69,21 +69,11 @@
 
         layer_Func {
             bindings = <
-        &none  &kp F1       &kp F2  &kp F3             &kp F4  &kp F5            &none                                                   &none    &kp F6        &kp F7         &kp F8     &kp F9  &kp F10    &none
-        &none   &none  &kp LC(DEL)   &none  &kp LC(BACKSPACE)   &none            &none                                                   &none  &kp HOME  &kp RC(LEFT)  &kp RC(RIGHT)    &kp END    &none  &kp F11
- &kp CAPSLOCK   &none      &kp DEL   &none      &kp BACKSPACE   &none            &none   &none   &none                   &none   &none   &none  &kp LEFT      &kp DOWN         &kp UP  &kp RIGHT    &none  &kp F12
-        &none   &none        &none   &none              &none   &none                            &none                   &none                     &none         &none          &none      &none    &none    &none
-        &none   &none        &none   &none              &none                    &none   &none   &none                   &none   &none   &none                   &none          &none      &none    &none    &none
-            >;
-        };
-
-        layer_Layer__4 {
-            bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+        &none  &kp F1       &kp F2  &kp F3             &kp F4  &kp F5                  &kp K_NEXT                                                  &bl BL_INC    &kp F6        &kp F7         &kp F8     &kp F9  &kp F10    &none
+        &none   &none  &kp LC(DEL)   &none  &kp LC(BACKSPACE)   &none            &kp K_PLAY_PAUSE                                                  &bl BL_TOG  &kp HOME  &kp RC(LEFT)  &kp RC(RIGHT)    &kp END    &none  &kp F11
+ &kp CAPSLOCK   &none      &kp DEL   &none      &kp BACKSPACE   &none                  &kp K_PREV   &none   &none                   &none   &none  &bl BL_DEC  &kp LEFT      &kp DOWN         &kp UP  &kp RIGHT    &none  &kp F12
+        &none   &none        &none   &none              &none   &none                                       &none                   &none                         &none         &none          &none      &none    &none    &none
+        &none   &none        &none   &none              &none                               &none   &none   &none                   &none   &none       &none                   &none          &none      &none    &none    &none
             >;
         };
 
