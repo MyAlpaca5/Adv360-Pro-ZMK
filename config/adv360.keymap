@@ -40,8 +40,8 @@
         default_layer {
             bindings = <
          &mo 1  &kp N1  &kp N2    &kp N3     &kp N4  &kp N5              &kp C_VOLUME_UP                                                                   &kp K_APP  &kp N6    &kp N7     &kp N8   &kp N9    &kp N0  &sk RC(RSHIFT)
-       &kp TAB   &kp Q   &kp W     &kp E      &kp R   &kp T                   &kp C_MUTE                                                               &kp RG(SPACE)   &kp Y     &kp U      &kp I    &kp O     &kp P           &none
-       &kp ESC   &kp A   &kp S     &kp D      &kp F   &kp G            &kp C_VOLUME_DOWN   &mo 3         &none                          &none   &mo 3  &kp RA(SPACE)   &kp H     &kp J      &kp K    &kp L  &kp SEMI         &kp SQT
+       &kp TAB   &kp Q   &kp W     &kp E      &kp R   &kp T                   &kp C_MUTE                                                               &kp RG(SPACE)   &kp Y     &kp U      &kp I    &kp O     &kp P   &kp BACKSLASH
+       &kp ESC   &kp A   &kp S     &kp D      &kp F   &kp G            &kp C_VOLUME_DOWN   &mo 3         &mo 4                          &mo 4   &mo 3  &kp RA(SPACE)   &kp H     &kp J      &kp K    &kp L  &kp SEMI         &kp SQT
      &kp LSHFT   &kp Z   &kp X     &kp C      &kp V   &kp B                                       &kp LEFT_ALT                  &kp RIGHT_ALT                          &kp N     &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp RSHFT
  &kp LEFT_META   &none   &none  &kp LEFT  &kp RIGHT                            &kp SPACE   &mo 2     &kp LCTRL                      &kp RCTRL   &mo 2      &kp ENTER          &kp DOWN     &kp UP    &none     &none  &kp RIGHT_META
             >;
@@ -59,21 +59,31 @@
 
         layer_Symbol {
             bindings = <
-  &none  &kp LS(N1)  &kp LS(N2)    &kp LS(N3)    &kp LS(N4)  &kp LS(N5)            &none                                                   &none  &kp RS(N6)     &kp RS(N7)     &kp RS(N8)    &kp RS(N9)  &kp RS(N0)   &none
-  &none       &none       &none      &kp LBKT      &kp RBKT       &none            &none                                                   &none       &none  &kp RS(MINUS)  &kp RS(EQUAL)  &kp RS(BSLH)       &none   &none
-  &none       &none       &none    &kp LS(N9)    &kp LS(N0)       &none            &none   &none   &none                   &none   &none   &none       &none      &kp MINUS      &kp EQUAL      &kp BSLH       &none   &none
-  &none       &none       &none  &kp LS(LBKT)  &kp LS(RBKT)       &none                            &none                   &none                       &none      &kp GRAVE  &kp RS(GRAVE)         &none       &none   &none
-  &none       &none       &none         &none         &none                        &none   &none   &none                   &none   &none   &none                      &none          &none         &none       &none   &none
+      &none  &kp LS(N1)  &kp LS(N2)    &kp LS(N3)    &kp LS(N4)  &kp LS(N5)            &none                                                   &none  &kp RS(N6)     &kp RS(N7)     &kp RS(N8)    &kp RS(N9)  &kp RS(N0)   &none
+      &none       &none       &none      &kp LBKT      &kp RBKT       &none            &none                                                   &none       &none  &kp RS(MINUS)  &kp RS(EQUAL)  &kp RS(BSLH)       &none   &none
+ &caps_word       &none       &none    &kp LS(N9)    &kp LS(N0)       &none            &none   &none   &none                   &none   &none   &none       &none      &kp MINUS      &kp EQUAL      &kp BSLH       &none   &none
+      &none       &none       &none  &kp LS(LBKT)  &kp LS(RBKT)       &none                            &none                   &none                       &none      &kp GRAVE  &kp RS(GRAVE)         &none       &none   &none
+      &none       &none       &none         &none         &none                        &none   &none   &none                   &none   &none   &none                      &none          &none         &none       &none   &none
             >;
         };
 
         layer_Func {
             bindings = <
-        &none  &kp F1       &kp F2  &kp F3             &kp F4  &kp F5                  &kp K_NEXT                                                  &bl BL_INC    &kp F6        &kp F7         &kp F8     &kp F9  &kp F10    &none
-        &none   &none  &kp LC(DEL)   &none  &kp LC(BACKSPACE)   &none            &kp K_PLAY_PAUSE                                                  &bl BL_TOG  &kp HOME  &kp RC(LEFT)  &kp RC(RIGHT)    &kp END    &none  &kp F11
- &kp CAPSLOCK   &none      &kp DEL   &none      &kp BACKSPACE   &none                  &kp K_PREV   &none   &none                   &none   &none  &bl BL_DEC  &kp LEFT      &kp DOWN         &kp UP  &kp RIGHT    &none  &kp F12
-        &none   &none        &none   &none              &none   &none                                       &none                   &none                         &none         &none          &none      &none    &none    &none
-        &none   &none        &none   &none              &none                               &none   &none   &none                   &none   &none       &none                   &none          &none      &none    &none    &none
+  &none  &kp F1       &kp F2  &kp F3             &kp F4  &kp F5                  &kp K_NEXT                                                  &bl BL_INC    &kp F6        &kp F7         &kp F8     &kp F9  &kp F10    &none
+  &none   &none  &kp LC(DEL)   &none  &kp LC(BACKSPACE)   &none            &kp K_PLAY_PAUSE                                                  &bl BL_TOG  &kp HOME  &kp RC(LEFT)  &kp RC(RIGHT)    &kp END    &none  &kp F11
+  &none   &none      &kp DEL   &none      &kp BACKSPACE   &none                  &kp K_PREV   &none   &none                   &none   &none  &bl BL_DEC  &kp LEFT      &kp DOWN         &kp UP  &kp RIGHT    &none  &kp F12
+  &none   &none        &none   &none              &none   &none                                       &none                   &none                         &none         &none          &none      &none    &none    &none
+  &none   &none        &none   &none              &none                               &none   &none   &none                   &none   &none       &none                   &none          &none      &none    &none    &none
+            >;
+        };
+
+        layer_Windows {
+            bindings = <
+  &none   &none       &none   &none        &none   &none            &none                                                   &none   &none         &none         &none          &none   &none   &none
+  &none   &none  &kp LA(F4)   &none  &kp LG(TAB)   &none            &none                                                   &none   &none         &none    &kp RG(UP)          &none   &none   &none
+  &none   &none   &kp LC(W)   &none  &kp LA(TAB)   &none            &none   &none   &none                   &none   &none   &none   &none  &kp RG(LEFT)  &kp RG(DOWN)  &kp RG(RIGHT)   &none   &none
+  &none   &none       &none   &none        &none   &none                            &none                   &none                   &none         &none         &none          &none   &none   &none
+  &none   &none       &none   &none        &none                    &none   &none   &none                   &none   &none   &none                 &none         &none          &none   &none   &none
             >;
         };
 
