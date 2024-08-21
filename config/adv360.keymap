@@ -18,6 +18,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 
+&sl {
+    release-after-ms = <5000>;
+};
+
 / {
   behaviors {
     #include "macros.dtsi"
