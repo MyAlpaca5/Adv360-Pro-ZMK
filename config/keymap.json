@@ -42,11 +42,11 @@
         "&none",  "&none",      "&none",  "&none",       "&none",  "&none",                               "&none",                      "&none",                            "&none",        "&none",      "&none",         "&none",  "&none",  "&none",
         "&none",  "&none",      "&none",  "&none",       "&none",                     "&none",  "&none",  "&none",                      "&none",  "&none",  "&none",                        "&none",      "&none",         "&none",  "&none",  "&none"
     ], [
-        "&none", "&kp NUMBER_6", "&kp NUMBER_7", "&kp NUMBER_8", "&kp NUMBER_9", "&kp NUMBER_0",           "&none",                                                              "&none",  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",
-        "&none",        "&kp Y",        "&kp U",        "&kp I",        "&kp O",        "&kp P",           "&none",                                                              "&none",  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",
-        "&none",        "&kp H",        "&kp J",        "&kp K",        "&kp L",        "&none",           "&none",  "&none",  "&none",                      "&none",  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",
-        "&none",        "&kp N",        "&kp M",        "&none",        "&none",        "&none",                               "&none",                      "&none",                      "&none",  "&none",  "&none",  "&none",  "&none",  "&none",
-        "&none",        "&none",        "&none",        "&none",        "&none",                           "&none",  "&none",  "&none",                      "&none",  "&none",  "&none",            "&none",  "&none",  "&none",  "&none",  "&none"
+         "&none", "&kp NUMBER_6", "&kp NUMBER_7", "&kp NUMBER_8", "&kp NUMBER_9", "&kp NUMBER_0",           "&none",                                                              "&none",  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",
+         "&none",        "&kp Y",        "&kp U",        "&kp I",        "&kp O",        "&kp P",           "&none",                                                              "&none",  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",
+       "&kp ESC",        "&kp H",        "&kp J",        "&kp K",        "&kp L",        "&none",           "&none",  "&none",  "&none",                      "&none",  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",  "&none",
+         "&none",        "&kp N",        "&kp M",        "&none",        "&none",        "&none",                               "&none",                      "&none",                      "&none",  "&none",  "&none",  "&none",  "&none",  "&none",
+         "&none",        "&none",        "&none",        "&none",        "&none",                           "&none",  "&none",  "&none",                      "&none",  "&none",  "&none",            "&none",  "&none",  "&none",  "&none",  "&none"
     ]
   ]
 }
